@@ -1,0 +1,5 @@
+libcatalyst-plugin-server-perl (0.28-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #552188)
+
+ -- Andrew Ruthven <puck@build-jessie-amd64.wgtn.cat-it.co.nz>  Fri, 29 Jan 2016 10:41:57 +1300

@@ -1,0 +1,23 @@
+Source: libcatalyst-plugin-server-perl
+Section: perl
+Priority: optional
+Maintainer: Andrew Ruthven <puck@build-jessie-amd64.wgtn.cat-it.co.nz>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libcatalyst-perl (>= 5.66),
+ libmro-compat-perl,
+ librpc-xml-perl (>= 1.35),
+ perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Catalyst-Plugin-Server
+
+Package: libcatalyst-plugin-server-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ libcatalyst-perl (>= 5.66),
+ libmro-compat-perl,
+ librpc-xml-perl (>= 1.35)
+Description: unknown
+ Base plugin for XMLRPC and our future SOAP server. For further information,
+ see one of the Server plugins
+ .
+ This description was automagically extracted from the module by dh-make-perl.
