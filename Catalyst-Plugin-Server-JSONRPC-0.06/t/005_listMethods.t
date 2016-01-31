@@ -20,7 +20,7 @@ use HTTP::Request;
 use Data::Dumper;
 
 
-my @result =  sort (
+my @result =  sort((
    'rpc.also',
    'rpc.functions.echo_fault',
    'rpc.settings.test',
@@ -30,7 +30,7 @@ my @result =  sort (
    'rpc.functions.echo_plain_stash',
    'rpc.functions.echo.path.stash',
    'rpc.functions.echo.path'
-);
+));
 
 my $EntryPoint  = 'http://localhost/rpc';
 
