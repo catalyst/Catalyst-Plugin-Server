@@ -109,9 +109,13 @@ C<bin/rpc_client>
 
 =head1 AUTHORS
 
-Jos Boumans (kane@cpan.org)
+Original Authors: Jos Boumans (kane@cpan.org) and Michiel Ootjers (michiel@cpan.org)
 
-Michiel Ootjers (michiel@cpan.org)
+Actually maintained by Jose Luis Martinez Torres JLMARTIN (jlmartinez@capside.com)
+
+=head1 THANKS
+
+Tomas Doran (BOBTFISH) for helping out with the debugging
 
 =head1 BUG REPORTS
 
