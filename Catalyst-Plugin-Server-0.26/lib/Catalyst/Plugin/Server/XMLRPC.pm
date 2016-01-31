@@ -549,7 +549,7 @@ Alias of $c->req->parameters
     use RPC::XML;
     use RPC::XML::Parser;
     use Scalar::Util 'reftype';
-    use Clone::Fast qw/clone/;
+    use Storable qw/dclone/;
 
     use Data::Dumper;
     use Text::SimpleTable;
@@ -690,9 +690,9 @@ Alias of $c->req->parameters
         local $RPC::XML::ENCODING = $c->server->xmlrpc->config->xml_encoding
                 if $c->server->xmlrpc->config->xml_encoding;
         
-        local $Clone::Fast::BREAK_REFS = 1;
-
-        my $res = RPC::XML::response->new(clone($status));
+        my $res = RPC::XML::response->new(
+            ref($status) ? dclone($status) : dclone(\$status)
+        );
         $c->res->content_type('text/xml');
 
         return $self->result_as_string( $res->as_string );
