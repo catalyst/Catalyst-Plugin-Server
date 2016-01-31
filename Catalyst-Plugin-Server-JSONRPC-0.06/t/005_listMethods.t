@@ -20,7 +20,7 @@ use HTTP::Request;
 use Data::Dumper;
 
 
-my @result =  (
+my @result =  sort (
    'rpc.also',
    'rpc.functions.echo_fault',
    'rpc.settings.test',
@@ -59,7 +59,7 @@ my $is_array = ref $data->{result} eq 'ARRAY';
 ok( $is_array ,       "   Is array. Dump:".Dumper($data) );
 
 if ( $is_array ) {
-    my @arr = @{$data->{result}};
+    my @arr = sort @{$data->{result}};
     ok( scalar(@result) == scalar(@arr) ,       "   medhods count" );
     for(my $i=0;$i<scalar(@result);$i++){
         ok( $result[$i] eq $arr[$i] ,       $result[$i]."  ok " );
