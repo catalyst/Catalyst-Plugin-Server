@@ -12,7 +12,7 @@ build_requires:
 requires:
     Catalyst:          5.66
     Catalyst::DispatchType::Regex: 0
-    Clone::Fast:       0
+    Storable:          0
     MRO::Compat:       0
     RPC::XML:          1.35
     RPC::XML::Parser:  1.12
