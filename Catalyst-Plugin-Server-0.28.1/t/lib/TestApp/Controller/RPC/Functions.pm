@@ -35,7 +35,9 @@ sub echo_plain_stash : XMLRPCLocal {
 
 sub echo_unicode: XMLRPCLocal {
     my ($self, $c, %args) = @_;
-    $c->stash->{'xmlrpc'} = '私はクリスです'
+    my $x = '私はクリスです';
+    utf8::decode($x);
+    $c->stash->{'xmlrpc'} = $x;
 }
 
 sub echo_path : XMLRPCPath('/rpc/functions/echo/path') {
