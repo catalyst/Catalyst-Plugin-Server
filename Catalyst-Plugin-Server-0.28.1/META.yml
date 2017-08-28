@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Catalyst-Plugin-Server
-version:            0.28
+version:            0.28.1
 abstract:           ~
 author:  []
 license:            unknown

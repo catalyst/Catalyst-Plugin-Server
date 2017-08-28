@@ -6,7 +6,7 @@
     use base qw/Class::Data::Inheritable/;
     use MRO::Compat;
 
-    our $VERSION = '0.28';
+    our $VERSION = '0.28.1';
 
     my $ReqClass = 'Catalyst::Plugin::Server::Request';
 
