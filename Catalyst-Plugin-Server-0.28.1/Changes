@@ -1,5 +1,9 @@
 Revision history for Perl extension Catalyst::Plugin::XMLRPC
 
+0.28.1  Fri Jan 29 10:41:55 NZDT 2016
+=====================================
+* Switch from Fast::Clone to Storable as Fast::Clone now fails to build.
+
 0.28  Thu Jul 08 20:30:00 CEST 2010 
 ===================================
 * Upgrade the plugin for Catalyt 5.8 series
