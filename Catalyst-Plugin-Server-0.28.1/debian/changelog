@@ -1,3 +1,9 @@
+libcatalyst-plugin-server-perl (0.28.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andrew Ruthven <puck@catalyst.net.nz>  Mon, 28 Aug 2017 00:19:03 +0000
+
 libcatalyst-plugin-server-perl (0.28-2) unstable; urgency=medium
 
   * Bump to put files in correct location
